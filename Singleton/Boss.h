@@ -10,6 +10,10 @@ class Boss
 public:
 	static Boss * getInstance();
 	void sayName();
+	static void resetInstance() {
+		delete instance;
+		instance = 0;
+	}
 	~Boss();
 };
 

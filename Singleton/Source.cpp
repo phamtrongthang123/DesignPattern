@@ -8,7 +8,7 @@ int main()
 
 	a->sayName();
 
-	delete a;
+	a->resetInstance();
 	cin.ignore();
 	return 0;
 }
